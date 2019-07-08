@@ -1,0 +1,191 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+h1, h2, h3, h4 {
+  font-family: "montserrat";
+  font-weight: 900;
+}
+
+h1 {
+  font-size:3.5rem;
+  line-height: 1.5;
+  text-align: left;
+
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+
+p {
+  color: #8f8f8f;
+}
+
+/** Sections ****/
+
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+
+
+.container-fluid{
+  padding: 7% 15%;
+
+}
+
+
+/* have to adjust padding on navbar bc boostrap adds it own, check console*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+
+/* adds space between links, list items */
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight:light;
+}
+
+
+
+
+/* you can combine selectors to mix them!! */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+
+
+.download-button{
+margin: 5% 3% 5% 0;
+
+}
+
+.col-lg-6{
+  text-align: left;
+}
+
+.titleDog {
+  transform: rotate(25deg);
+  width: 60%;
+  position: absolute;
+  right: 25%;
+  bottom: -65%;
+
+}
+
+
+/*******FEATURES SECTION, 1 is larger so it sits on top, you can also remove z index and it would work****/
+#features {
+background-color: white;
+position:relative;
+z-index: 1;
+
+
+
+}
+
+/****YOU CAN CHANGE THE SIZE IN FontAWESOME IN THE HTML ***/
+.check {
+  color: #ef8172;
+margin-bottom: 30px;
+
+}
+
+.check:hover {
+  color: #ff4c68;
+}
+
+/**** so that it wraps more add padding ****/
+.featureText {
+  padding: 4.5%;
+}
+
+
+/*** Testimonial Section ***/
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.testimonial-image {
+  width:10%;
+  border-radius:100%;
+  margin: 20px;
+}
+
+/* add padding to the carousel items but not the buttons, used container fluid */
+.carousel-item {
+
+}
+
+.press-images {
+  width: 15%;
+  margin: 20px 20px 50px 20px;
+}
+
+/* pricing section */
+
+#pricing {
+  padding: 100px;
+
+}
+
+/* your collumns, space between the cards */
+.pricing {
+  padding: 3% 2%;
+}
+/**condensed the third option**/
+.third {
+  line-height: 1rem;
+}
+
+
+  .download-buttons {
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+    }
+/***footer***/
+
+    .footers {
+      margin: 20px 10px;
+    }
+
+
+@media (max-width:1028px) {
+
+  #title {
+    text-align: center;
+  }
+  .titleDog {
+    width: 60%;
+    position: static;
+    transform: rotate(0);
+  }
+}
