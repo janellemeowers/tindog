@@ -1,131 +1,110 @@
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   text-align: center;
 }
-h1, h2, h3, h4 {
-  font-family: "montserrat";
-  font-weight: 900;
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
 }
 
 h1 {
-  font-size:3.5rem;
-  line-height: 1.5;
-  text-align: left;
+  font-size: 3.5rem;
+  /* black montserrat */
+  font-weight: 900;
 
 }
 
 h2 {
-  font-size: 3rem;
-  line-height: 1.5;
+  font-size: 2.5rem;
 }
-
-h3 {
-  font-size: 1.5rem;
-}
-
-
 
 p {
   color: #8f8f8f;
 }
 
-/** Sections ****/
+.container-fluid {
+  padding: 3% 15% 7%;
+}
 
-.colored-section {
+#title {
   background-color: #ff4c68;
   color: white;
+  text-align: left;
 }
 
-
-
-.container-fluid{
-  padding: 7% 15%;
-
-}
-
-
-/* have to adjust padding on navbar bc boostrap adds it own, check console*/
+/*add space below nav */
 .navbar {
-  padding: 0 0 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .navbar-brand {
+  font-family: 'Ubuntu';
   font-size: 2.5rem;
-  font-family: "Ubuntu";
-  font-weight: bold;
+  font-weight: 400;
 }
 
-/* adds space between links, list items */
-.nav-item{
-  padding: 0 18px;
+.nav-item {
+  padding: 0px 18px;
 }
 
 .nav-link {
   font-size: 1.2rem;
-  font-weight:light;
+  font-weight: 400;
 }
 
-
-
-
-/* you can combine selectors to mix them!! */
-#title .container-fluid {
-  padding: 3% 15% 7%;
-  text-align: left;
-}
-
-
-
-.download-button{
-margin: 5% 3% 5% 0;
+.download-button {
+  margin: 5% 3% 5% 0;
 
 }
 
-.col-lg-6{
-  text-align: left;
-}
-
-.titleDog {
+/* reduce dog image by 60% */
+.dog-title-image {
+  width: 300px;
   transform: rotate(25deg);
-  width: 60%;
+  margin-left: 60px;
   position: absolute;
-  right: 25%;
-  bottom: -65%;
-
 }
 
 
-/*******FEATURES SECTION, 1 is larger so it sits on top, you can also remove z index and it would work****/
+
 #features {
-background-color: white;
-position:relative;
-z-index: 1;
-
-
-
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-/****YOU CAN CHANGE THE SIZE IN FontAWESOME IN THE HTML ***/
-.check {
+/*padding text goes onto next line*/
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
   color: #ef8172;
-margin-bottom: 30px;
-
+  margin-bottom: 1rem;
 }
 
-.check:hover {
+.icon:hover {
   color: #ff4c68;
 }
 
-/**** so that it wraps more add padding ****/
-.featureText {
-  padding: 4.5%;
-}
-
-
-/*** Testimonial Section ***/
-
 #testimonials {
   background-color: #ef8172;
+  color: #fff;
+}
+
+/* margin 20 on all sides, 100% makes circle */
+.testimonial-img {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px
+}
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 #press {
@@ -133,59 +112,55 @@ margin-bottom: 30px;
   padding-bottom: 3%;
 }
 
-.testimonial-image {
-  width:10%;
-  border-radius:100%;
-  margin: 20px;
-}
-
-/* add padding to the carousel items but not the buttons, used container fluid */
-.carousel-item {
-
-}
-
-.press-images {
+.press-logos {
   width: 15%;
-  margin: 20px 20px 50px 20px;
+  margin: 20px 20px 50px;
 }
-
-/* pricing section */
 
 #pricing {
   padding: 100px;
-
+  text-align: center;
 }
 
-/* your collumns, space between the cards */
-.pricing {
+.pricing-col {
   padding: 3% 2%;
 }
-/**condensed the third option**/
-.third {
-  line-height: 1rem;
+
+/* adjust line height to fit Mastiff price box */
+.m-text {
+  line-height: .9rem;
 }
 
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+}
 
-  .download-buttons {
-      margin-top: 30px;
-      margin-bottom: 20px;
+.cta-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
 
+#footer {
+    padding: 7% 15%;
     }
-/***footer***/
 
-    .footers {
-      margin: 20px 10px;
+.social-icons {
+    margin: 20px 10px;
     }
 
-
-@media (max-width:1028px) {
-
+/*checks for smaller screens*/
+@media (max-width: 1000px) {
   #title {
     text-align: center;
   }
-  .titleDog {
-    width: 60%;
+
+  .dog-title-image {
     position: static;
-    transform: rotate(0);
+    transform: rotate(0deg);
+    width: 270px;
   }
 }
