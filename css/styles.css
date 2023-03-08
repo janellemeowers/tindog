@@ -105,6 +105,8 @@ p {
 
 .carousel-item {
   padding: 7% 15%;
+  overflow: hidden;
+  height: 500px;
 }
 
 #press {
